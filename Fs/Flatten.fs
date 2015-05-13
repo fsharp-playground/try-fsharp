@@ -1,6 +1,5 @@
 ﻿module Flatten
 
-
 open System.Linq
 open FsUnit
 open Xunit
