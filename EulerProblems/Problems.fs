@@ -1,4 +1,6 @@
-﻿module EulerProblems.Problems
+﻿
+module EulerProblems.Problems
+//#nowarn "40"
 
 open FsUnit
 open NUnit.Framework
@@ -44,3 +46,6 @@ let Problem001() =
     seq { 1 .. 999 }
     |> Seq.filter(fun x -> x % 3 = 0 || x % 5 = 0)
     |> Seq.sum |> should equal 233168
+
+    // watr
+    // luta
