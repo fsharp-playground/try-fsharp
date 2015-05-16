@@ -9,24 +9,24 @@ type IA = interface end
 type IB = interface end
 
 // And two classes that implement both of the interfaces
-type First() = 
+type First() =
   interface IA
   interface IB
 
-type Second() = 
+type Second() =
   interface IA
   interface IB
 
 // Now, what implicit upcast should the compiler insert here?
-// The return type could be either IA, IB or obj, but there is 
+// The return type could be either IA, IB or obj, but there is
 // no _unique_ solution.
 //
-// (This is an error in F# and it cannot be easily fixed by 
+// (This is an error in F# and it cannot be easily fixed by
 // trying to identify the most specific common supertype, because
 // there is no single common supertype)
 
 // Error, This expression was expected to have type First  but here has type Second
-let test1 = 
+let test1 =
 //    if 1 = 1 then First() else Second()
     ()
 
@@ -35,8 +35,8 @@ let test2:_ =
     ()
 
 // Error, This expression was expected to have type obj but here has type First/Second
-let test3:obj = 
-//    if 1 = 1 then First() else Second() 
+let test3:obj =
+//    if 1 = 1 then First() else Second()
     "" :>_
 
 // Ok, The cast will be determined by the compiler, because of _
@@ -65,16 +65,16 @@ let test6() =
 
 // Original
 type 'a NestedList = List of 'a NestedList list | Elem of 'a
-let flatten ls = 
-    let rec loop acc = function 
+let flatten ls =
+    let rec loop acc = function
         | Elem x -> x::acc
         | List xs -> List.foldBack(fun x acc -> loop acc x) xs acc
     loop [] ls
 
-// New Version 
+// New Version
 type MyNestedList<'a> = List of MyNestedList<'a> list | Elem of 'a
-let newFlatten ls = 
-    let rec loop acc input = 
+let newFlatten ls =
+    let rec loop acc input =
         match input with
         | Elem x -> x::acc
         | List xs -> List.foldBack(fun x acc -> loop acc x) xs acc
@@ -88,4 +88,3 @@ let newFlatten ls =
 /// val it : int list = [1;2;3;4;5]
 /// > flatten (List [] : int NestedList);;
 /// val it : int list = []
-

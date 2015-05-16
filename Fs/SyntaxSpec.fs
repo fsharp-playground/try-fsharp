@@ -1,5 +1,3 @@
-﻿module Tester.SyntaxSpec
-
 open NUnit.Framework
 open AutoMapper
 open System
@@ -28,7 +26,7 @@ type NestedType<'a> = List of NestedType<'a> list | Element of 'a
 [<Fact>]
 let ``Flatten 99``() =
     let flatNestedType ls =
-        let rec start temp input = 
+        let rec start temp input =
             match input with
             | Element e -> e::temp
             | List es -> List.foldBack(fun x acc -> start acc x) es temp
@@ -47,9 +45,9 @@ let ``Flatten 99``() =
 /// val it : int list = []
 
 (*[omit:(Solution 1)]*)
-(* 
-let flatten ls = 
-    let rec loop acc = function 
+(*
+let flatten ls =
+    let rec loop acc = function
         | Elem x -> x::acc
         | List xs -> List.foldBack(fun x acc -> loop acc x) xs acc
     loop [] ls
@@ -70,24 +68,24 @@ let ``Flatten``() =
 [<Fact>]
 let ``Palindrome``() =
     let inline palindrome l = List.rev l = l
-    
+
     [1;2;3;4;5] |> palindrome |> should equal false;
     ["r"; "a"; "c"; "e"; "c"; "a"; "r"] |> palindrome |> should equal true;
     [1; 1; 3; 3; 1; 1] |> palindrome |> should equal true;
-    
+
     //1, 2, 3, 4, 5] => false
     //["r", "a", "c", "e", "c", "a", "r"] => true
     //[1, 1, 3, 3, 1, 1] => true
 
 
 [<Fact>]
-let ``Other F# Operators``() = 
+let ``Other F# Operators``() =
     let f1 p1 = p1
     let f2 p1 p2 = p1 + p2
     let f3 p1 p2 p3 = p1 + p2 + p3
 
     let fn1 n = n * n
-    let fn2 n = n + n 
+    let fn2 n = n + n
 
     let fn12 = fn1 >> fn2 // composes two functions.
     let fn21 = fn1 << fn2 // composes two functions with reverse order.
@@ -102,16 +100,16 @@ let ``Other F# Operators``() =
     fn12 1 |> should equal 2
     fn21 1 |> should equal 4
 
-type IA = 
+type IA =
     abstract member F: int with get,set
 
 [<Test>]
 let ``Object Expression``() =
 
-    let expression = 
+    let expression =
         let dataStore = ref 9
         {
-            new IA with 
+            new IA with
                 member this.F
                     with get() = !dataStore
                     and set(v) = dataStore := v
@@ -128,7 +126,7 @@ type A() =
         member this.B = 1
 
 [<Test>]
-let ``type infer``() =
+let ``TypeInfo``() =
 
         let test (x) = x * x
 
@@ -141,15 +139,15 @@ let ``type infer``() =
         aa |> Array.map fix |> should equal [|1;1|]
         [|a|] |> Array.map fix  |> should equal [|1|]
 
-type IAnimal = 
+type IAnimal =
     abstract member Roar:unit -> String
 
 [<AbstractClass>]
 type Human() =
     abstract member Roar:unit -> String
 
-type Dog() = 
-    interface IAnimal with 
+type Dog() =
+    interface IAnimal with
         member this.Roar() = "DEE"
     member this.Run() = "..."
 
@@ -158,12 +156,12 @@ type Bird() = member this.Fly() = "^^^"
 
 type Sumo() =
     inherit Human()
-    override this.Roar() = "SEE" 
+    override this.Roar() = "SEE"
 
 [<Test>]
 let ``Can Restrict Parameter Type With Generic Constraint``() =
 
-    let inline roar animal = 
+    let inline roar animal =
         (^A : (member Roar : unit -> string) animal)
 
     let inline roar2 (animal: ^A when ^A : (member Roar:unit -> string)): string  =
@@ -171,7 +169,7 @@ let ``Can Restrict Parameter Type With Generic Constraint``() =
         (^A : (member Roar : unit -> string) animal)
         //animal.Roar()
 
-    let inline run animal =  
+    let inline run animal =
         (^A : (member Run : unit -> string) animal)
 
     Dog() |> run |> should equal "..."
@@ -179,7 +177,7 @@ let ``Can Restrict Parameter Type With Generic Constraint``() =
     Cat() |> roar |> should equal "CEE"
     Sumo() |> roar |> should equal "SEE"
 
-    // Ok, does not compile 
+    // Ok, does not compile
     // Bird() |> roar |> should equal "..."
 
 let inline inlineAdd a b = a + b
@@ -212,7 +210,7 @@ let ``Can Use Generic Type With Inline Function``() =
 let fb number =
     match number % 3, number % 5 with
     | 0, 0 -> "FizzBuzz"
-    | 0, _ -> "Fizz" 
+    | 0, _ -> "Fizz"
     | _, 0 -> "Buzz"
     | _ -> number.ToString()
 
@@ -223,17 +221,17 @@ let ``Can Play Fizz Buzz With Any Number``() =
     10 |> fb |> should equal "Buzz"
     15 |> fb |> should equal "FizzBuzz"
 
-type SType = 
-    struct 
-        val mutable A: int 
+type SType =
+    struct
+        val mutable A: int
     end
 
-type RType  = { 
+type RType  = {
     Z : int
     A : int
 }
 
-type CType() = 
+type CType() =
     member val A = 0 with get, set
     member val Z = 0 with get, set
     member val M = 0 with get, set
@@ -247,11 +245,11 @@ let ``Can Initialize Object Via Parameter Constructor``() =
     let cProperties = cType.GetProperties()
     let cInstance = new CType(A = 200, Z = 100)
 
-    let cValue (name, propertyType:Type) = 
+    let cValue (name, propertyType:Type) =
         let p = cProperties |> Seq.tryFind (fun x -> x.Name = name)
         match p with
         | Some x -> Some(x.GetValue(cInstance))
-        | _ -> if propertyType.IsValueType then 
+        | _ -> if propertyType.IsValueType then
                 Some(Activator.CreateInstance(propertyType)) else None
 
     let ctorParams = rProperties |> Seq.map (fun x -> cValue(x.Name, x.PropertyType).Value)
@@ -265,7 +263,7 @@ let ``Can Initialize Object Via Constructor``() =
     let c = CType(Z = 100, A = 200)
 
     // constructor 'RType' is not defined
-    // let r = RType() 
+    // let r = RType()
 
     Mapper.CreateMap<CType,RType>() |> ignore
     let r = Mapper.Map<RType>(c)
@@ -274,9 +272,9 @@ let ``Can Initialize Object Via Constructor``() =
     r.GetType() |> should equal typeof<RType>
     r.Z |> should equal 100
     r.A |> should equal 200
-    
+
     // no parameterless constructor
-    // let ins = Activator.CreateInstance<RType>() 
+    // let ins = Activator.CreateInstance<RType>()
 
     let fr = FormatterServices.GetUninitializedObject(typeof<RType>) :?> RType
     fr.Z |> should equal 0
@@ -286,14 +284,9 @@ let ``Can Map Value From CType To (RS)Type``() =
     let c = CType(A = 100)
 
     Mapper.CreateMap<CType, RType>() |> ignore
-    let r = Mapper.Map<CType, RType>(c) 
+    let r = Mapper.Map<CType, RType>(c)
     r.A |> should equal 100
 
     Mapper.CreateMap<CType, SType>() |> ignore
     let s = Mapper.Map<CType, SType>(c)
     s.A |> should equal 100
-
-
-    
-
-

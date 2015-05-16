@@ -1,3 +1,5 @@
+.vs
+*.lock
 packages
 bin
 obj

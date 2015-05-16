@@ -1,0 +1,5 @@
+source http://nuget.org/api/v2
+
+nuget FsUnit
+nuget Xunit
+nuget FSharp.Charting
