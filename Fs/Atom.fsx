@@ -5,9 +5,9 @@
 
 open FsUnit
 open NUnit.Framework
+open System
 
 module Atom =
-
     let [<Test>] ``a should equal to 200``() =
         let a = 100
         let b = a + a

@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>4eeec08c-c747-479f-9a35-097e3014aa79</ProjectGuid>
+    <ProjectGuid>bc01cfc3-3696-4187-b163-a52be4202880</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>FsChart</RootNamespace>
-    <AssemblyName>FsChart</AssemblyName>
+    <RootNamespace>EulerProblems</RootNamespace>
+    <AssemblyName>EulerProblems</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Name>FsChart</Name>
+    <Name>EulerProblems</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,7 +22,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\FsChart.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\EulerProblems.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,7 +31,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\FsChart.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\EulerProblems.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
@@ -51,15 +51,11 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Content Include="app.config" />
-    <Compile Include="Test.fs" />
+    <Compile Include="Problems.fs" />
     <Content Include="packages.config" />
+    <Content Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="FSharp.Charting">
-      <HintPath>..\packages\FSharp.Charting\lib\net40\FSharp.Charting.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="FsUnit.NUnit">
       <HintPath>..\packages\FsUnit\Lib\Net40\FsUnit.NUnit.dll</HintPath>
       <Private>True</Private>
@@ -74,10 +70,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

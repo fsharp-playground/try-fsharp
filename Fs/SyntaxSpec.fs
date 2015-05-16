@@ -1,3 +1,5 @@
+module SyntaxSpec
+
 open NUnit.Framework
 open AutoMapper
 open System

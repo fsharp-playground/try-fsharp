@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Fs", "Fs\Fs.fsproj", "{0639
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsChart", "FsChart\FsChart.fsproj", "{4EEEC08C-C747-479F-9A35-097E3014AA79}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EulerProblems", "EulerProblems\EulerProblems.fsproj", "{BC01CFC3-3696-4187-B163-A52BE4202880}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4EEEC08C-C747-479F-9A35-097E3014AA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EEEC08C-C747-479F-9A35-097E3014AA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EEEC08C-C747-479F-9A35-097E3014AA79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC01CFC3-3696-4187-B163-A52BE4202880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC01CFC3-3696-4187-B163-A52BE4202880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC01CFC3-3696-4187-B163-A52BE4202880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC01CFC3-3696-4187-B163-A52BE4202880}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
