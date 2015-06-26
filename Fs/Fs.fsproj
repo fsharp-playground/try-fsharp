@@ -61,6 +61,7 @@
     <Compile Include="Rotate.fs" />
     <Content Include="app.config" />
     <Content Include="packages.config" />
+    <Compile Include="Trigroup.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="AutoMapper">
@@ -72,11 +73,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Charting">
-      <HintPath>..\packages\FSharp.Charting\lib\net40\FSharp.Charting.dll</HintPath>
+      <HintPath>..\packages\FSharp.Charting.0.90.10\lib\net40\FSharp.Charting.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FsUnit.NUnit">
-      <HintPath>..\packages\FsUnit\Lib\Net40\FsUnit.NUnit.dll</HintPath>
+      <HintPath>..\packages\FsUnit.1.3.0.1\Lib\Net40\FsUnit.NUnit.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
@@ -88,7 +89,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit\lib\nunit.framework.dll</HintPath>
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
