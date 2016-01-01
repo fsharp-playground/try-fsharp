@@ -30,6 +30,7 @@ let ``Constructors as First-Class Functions``() =
 
     "../../AssemblyInfo.fs" |> FileInfo |> fun f -> f.Extension |> should equal ".fs"
 
+(*
 [<Test>]
 let FsRotate() =
 
@@ -50,3 +51,5 @@ let FsRotate() =
     [1;2;3;4] |> slice 1 |> should equal [2;3;4;1]
     "hello" |> slice 2 |> should equal "llohe"
     "negative ok" |> slice -2 |> should equal "oknegative "
+
+*)
