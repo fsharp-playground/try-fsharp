@@ -3,6 +3,45 @@ module CompuationExpression
 open NUnit.Framework
 open FsUnit
 
+type MyCP() =
+    member this.Combine(a, b) = 
+        match a with 
+        | Some _ -> a
+        | None -> b
+
+    member this.Delay(f) = f()
+    member this.ReturnFrom(x) = x
+
+[<Test>]
+let shouldWriteCP() =
+
+    let map1 = [ ("1","One"); ("2","Two") ] |> Map.ofList
+    let map2 = [ ("A","Alice"); ("B","Bob") ] |> Map.ofList
+    let map3 = [ ("CA","California"); ("NY","New York") ] |> Map.ofList
+
+    let multiLookup key =
+        match map1.TryFind key with
+        | Some result1 -> Some result1   // success
+        | None ->   // failure
+            match map2.TryFind key with
+            | Some result2 -> Some result2 // success
+            | None ->   // failure
+                match map3.TryFind key with
+                | Some result3 -> Some result3  // success
+                | None -> None // failure
+
+    let cp = MyCP()
+    let find key = 
+        cp {
+            return! map1.TryFind key
+            return! map2.TryFind key
+            return! map3.TryFind key
+        }
+
+    find "A" |> should equal (Some "Alice")
+
+
+(* -------------------------- *)
 
 let map1 = [ ("1","One"); ("2","Two") ] |> Map.ofList
 let map2 = [ ("A","Alice"); ("B","Bob") ] |> Map.ofList
