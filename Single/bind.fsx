@@ -1,7 +1,4 @@
 
-let (>>=) m f =
-    printfn "expression is %A" m
-    f m
-
+let (>>=) m f = f m
 1 >>= (+) 2 >>=  (*) 42 >>= id |> printfn "%A"
 
