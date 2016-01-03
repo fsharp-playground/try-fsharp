@@ -19,7 +19,7 @@ let createMyFormat() =
     con.Value |> should equal "Hello"
 
     let f = Printf.TextWriterFormat<int -> int -> int -> unit>("%d %d = %d")
-    printfn f 10 10 "10" 
+    printfn f 10 10 20
 
 [<Test>]
 let printString() =

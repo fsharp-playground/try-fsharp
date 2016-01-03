@@ -58,12 +58,12 @@ do
 do
     printfn "== alias =="
     let go = (..)
-    [ go 1 10] |> print
+    go 1 10 |> print
 
 do
     printfn "== when =="
 
-    let go(x: ^T when (^T) : (static member (+): ^T * ^T -> ^T)) =
+    let inline go(x: ^T when (^T) : (static member (+): ^T * ^T -> ^T)) =
         x + 100.0
 
     let inline add(value1 : ^T when (^T or ^U) : (static member (+) : ^T * ^U -> ^T), value2 : ^U) =
