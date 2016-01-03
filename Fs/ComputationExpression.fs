@@ -3,6 +3,30 @@ module CompuationExpression
 open NUnit.Framework
 open FsUnit
 
+
+type MyWriterFormat<'T>(fmt: string) =
+    do printfn "%A" fmt
+    member this.Value = fmt
+
+let  myPrinter = MyWriterFormat
+
+let createMyFormat() =
+    let printer = myPrinter "Hello"
+    printer.Value |> should equal "Hello"
+
+    let hello = "Hello"
+    let con = myPrinter hello
+    con.Value |> should equal "Hello"
+
+    let f = Printf.TextWriterFormat<int -> int -> int -> unit>("%d %d = %d")
+    printfn f 10 10 "10" 
+
+[<Test>]
+let printString() =
+    let str = "Say %s" |> Printf.TextWriterFormat<_>
+    printfn str "Hello" 
+
+
 type MyCP() =
     member this.Combine(a, b) = 
         match a with 
