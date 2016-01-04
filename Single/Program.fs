@@ -1,4 +1,4 @@
 [<EntryPoint>]
-let main argv =
+let m argv =
     printfn "%A" argv
     0
