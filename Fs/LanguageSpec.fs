@@ -13,6 +13,7 @@ open System.Reflection
 type A() = member val FA = 0 with set,get
 type B() = member val FB = 0 with set,get
 
+
 type LanguageSpec() =
     member this.GenericF<'R>(t: int): 'R =
         let tr = typeof<'R>

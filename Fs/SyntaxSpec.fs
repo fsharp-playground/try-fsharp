@@ -11,6 +11,20 @@ open FsUnit
 open Xunit
 
 [<Fact>]
+let SoundSig() =
+//    let asr = 100
+//    let land = 100
+//    let lor = 100
+//    let lsl = 100
+//    let lsr = 100
+//    let lxor = 100
+//    let mod = 100
+//    let sig = 100
+
+//    let process = 100;
+    ()
+
+[<Fact>]
 let ``Compress a Sequence``() =
 
     let compress = function

@@ -9,8 +9,8 @@ type LoggingBuilder() =
     member this.Return(x) = x
 
 let divide() =
-    let divideBy buttom top =
-        if buttom = 0 then None else Some top/buttom
+    let divideBy buttom top = if buttom = 0 then None else Some <| top/buttom
+    ()
 
 let log() =
     let logger = new LoggingBuilder()
@@ -22,4 +22,4 @@ let log() =
             let! z = x + y
             return z
             }
-
+    ()
