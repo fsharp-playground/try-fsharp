@@ -8,19 +8,28 @@ public class Test {
     public static void Main(String[] args) {
 
         Action<Object> write = (s) => Console.WriteLine(s.ToString());
-        var a = Enumerable.Empty<string>();
-        var b = Enumerable.Empty<string>();
-        var c = Enumerable.Empty<string>();
-        var d = Enumerable.Empty<int>();
-        var e = Enumerable.Empty<byte>();
+        var s1 = Enumerable.Empty<string>();
+        var s2 = Enumerable.Empty<string>();
+        var s3 = Enumerable.Empty<string>();
+        var d1 = Enumerable.Empty<int>();
+        var d2 = Enumerable.Empty<int>();
+        var b1 = Enumerable.Empty<byte>();
+        var o1 = Enumerable.Empty<object>();
+        var o2 = Enumerable.Empty<object>();
 
         var l1 = Enumerable.Empty<List<string>>();
         var l2 = Enumerable.Empty<List<int>>();
 
-        write(a == b);      // true
-        write(a == c);      // true
-        write(a == d);      // false
-        write(d == e);      // false
+        write(s1 == s2);      // true
+        write(s1 == s3);      // true
+        write(d1 == d2);      // false
+        write(d1 == b1);      // false
         write(l1 == l2);    // false
+        write(o1 == o2);
+        write(d1 == d2);
+
+        while(Console.ReadLine() != "q") {
+            Console.WriteLine("...");
+        }
     }
 }
