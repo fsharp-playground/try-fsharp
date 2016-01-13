@@ -27,9 +27,6 @@ public class Test {
         write(l1 == l2);    // false
         write(o1 == o2);
         write(d1 == d2);
-
-        while(Console.ReadLine() != "q") {
-            Console.WriteLine("...");
-        }
+        write(s1 == o1);
     }
 }
