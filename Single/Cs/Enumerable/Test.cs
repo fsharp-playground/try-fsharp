@@ -5,6 +5,22 @@ using System.Collections.Generic;
 // dmcs Enumerable.cs
 
 public class Test {
+
+    public static void TestReference() {
+
+        Action<Object> write = (s) => Console.WriteLine(s.ToString());
+        write(Enumerable.Empty<string>() == Enumerable.Empty<string>());    // true
+        write(Enumerable.Empty<object>() == Enumerable.Empty<object>());    // true
+        write(Enumerable.Empty<string>() != Enumerable.Empty<object>());    // true
+        write(Enumerable.Empty<int>() == Enumerable.Empty<int>());          // true
+        write(Enumerable.Empty<float>() == Enumerable.Empty<float>());      // true
+        write(Enumerable.Empty<int>() != Enumerable.Empty<float>());        // true
+
+
+        write(Object.ReferenceEquals(Enumerable.Empty<int>(), Enumerable.Empty<int>()));
+        write(!Object.ReferenceEquals(Enumerable.Empty<int>(), Enumerable.Empty<float>()));
+    }
+
     public static void Main(String[] args) {
 
         Action<Object> write = (s) => Console.WriteLine(s.ToString());
@@ -28,5 +44,7 @@ public class Test {
         write(o1 == o2);
         write(d1 == d2);
         write(s1 == o1);
+
+        TestReference();
     }
 }

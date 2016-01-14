@@ -1,3 +1,3 @@
-
-dmcs CheckedManual.cs -target:library
-monodis --output=CheckedManual.il CheckedManual.dll
+dmcs Test.cs
+mono Test.exe
+monodis --output=Test.il Test.exe

@@ -1,2 +1,3 @@
-dmcs Enumerable.cs
-mono Enumerable.exe
+dmcs Test.cs
+mono Test.exe
+monodis --output=Test.il Test.exe
