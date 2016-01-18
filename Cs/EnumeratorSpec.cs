@@ -40,6 +40,7 @@ namespace Cs
             var int1 = Collection2.Empty2<int>();
             var int2 = Collection2.Empty2<int>();
 
+
             var str1 = Collection2.Empty2<string>();
             var str2 = Collection2.Empty2<string>();
 
@@ -52,6 +53,11 @@ namespace Cs
             Console.WriteLine(int1 != str1);
             Console.WriteLine(str1 != obj1);
 
+            Func<>
         }
+    }
+
+    public class Program
+    {
     }
 }
