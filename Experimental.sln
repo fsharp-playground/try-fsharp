@@ -7,6 +7,8 @@ Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Fs", "Fs\Fs.fsproj", "{0639
 EndProject
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "EulerProblems", "EulerProblems\EulerProblems.fsproj", "{BC01CFC3-3696-4187-B163-A52BE4202880}"
 EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "FSharp.Chessie", "FSharp.Chessie\FSharp.Chessie.fsproj", "{6BF15432-FE41-43D8-B556-C67A5E97D433}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BC01CFC3-3696-4187-B163-A52BE4202880}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC01CFC3-3696-4187-B163-A52BE4202880}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC01CFC3-3696-4187-B163-A52BE4202880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BF15432-FE41-43D8-B556-C67A5E97D433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF15432-FE41-43D8-B556-C67A5E97D433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF15432-FE41-43D8-B556-C67A5E97D433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF15432-FE41-43D8-B556-C67A5E97D433}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
