@@ -1,28 +1,11 @@
-﻿<Properties StartupItem="Fs/Fs.fsproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Fs/ActivePatternSpec.fs">
+﻿<Properties StartupConfiguration="{06391593-C232-47C3-90A2-D73644F3AF9F}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TryFSharp/SyntaxSpec.fs">
     <Files>
-      <File FileName="Fs/Rotate.fs" Line="1" Column="1" />
-      <File FileName="Fs/LanguageSpec.fs" Line="1" Column="1" />
-      <File FileName="Fs/Flatten.fs" Line="1" Column="1" />
-      <File FileName="Fs/ActivePatternSpec.fs" Line="67" Column="10" />
+      <File FileName="TryFSharp/AssemblyInfo.fs" Line="1" Column="1" />
+      <File FileName="TryFSharp/SyntaxSpec.fs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State name="__root__">
-          <Node name="Experimental" expanded="True">
-            <Node name="Fs" expanded="True">
-              <Node name="ActivePatternSpec+Multicase" expanded="True">
-                <Node name="shouldCheckResolution" selected="True" />
-              </Node>
-              <Node name="ActivePatternSpec+Parameterize" expanded="True" />
-              <Node name="ActivePatternSpec+Partail" expanded="True" />
-              <Node name="ActivePatternSpec+Single" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TryFSharp PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
