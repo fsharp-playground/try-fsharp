@@ -1,16 +1,8 @@
 ## Try `F#`
 
-- [ActivePattern](Single/ActivePattern)
 - [CallerLineNumber](Single/CallerLineNumber)
-- [CompuationExpression](Single/CompuationExpression)
-- [Fever](Single/Fever)
-- [FizzBuzz](Single/FizzBuzz)
-- [FriendlyDateFormatting](Single/FriendlyDateFormatting)
-- [GroupBy](Single/GroupBy)
-- [HelloCompuationExpression](Single/HelloCompuationExpression)
-- [Legacy](Single/Legacy)
-- [LongTimeAgo](Single/LongTimeAgo)
-- [MatchExpression](Single/MatchExpression)
 - [Result](Single/Result)
-- [StrcuturedFormatDisplay](Single/StrcuturedFormatDisplay)
-- [TomasFailed](Single/TomasFailed)
+
+## Resources
+
+- https://github.com/fsharp/fslang-suggestions

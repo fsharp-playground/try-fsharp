@@ -1,19 +1,7 @@
-
 open System.Runtime.CompilerServices
 
 type M() =
     member self.f([<CallerLineNumber>]?line : int) =
-        printfn "Line %d" line.Value
-
-(*
-    member self.f() =
-        printfn "Line f"
-*)
-
-
+        line.Value
 let m = M()
-
-let foo () =
-    m.f()
-
-foo ()
+m.f() = 8 |> printfn "%A"

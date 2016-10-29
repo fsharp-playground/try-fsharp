@@ -1,12 +1,12 @@
 
-let go() : Result<string,string> =
-    Result.Error("Eror")
+let check = function
+    | true -> Ok("ok")
+    | false -> Error("error")
 
+let rs = check(true)
+let value = 
+    match rs with
+    | Ok rs -> rs 
+    | Error err -> err 
 
-let rs = go()
-
-let msg = function
-        | Error er -> "Error"
-        | Ok x -> "OK"
-
-msg rs |> printfn "%A"
+value = "ok" |> printfn "%A"
