@@ -1,7 +1,6 @@
 ## Main.fsx
 
 ```fsharp
-
 let check = function
     | true -> Ok("ok")
     | false -> Error("error")

@@ -1,4 +1,3 @@
-
 let check = function
     | true -> Ok("ok")
     | false -> Error("error")
