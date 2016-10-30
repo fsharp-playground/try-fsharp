@@ -1,8 +1,9 @@
 ## Try `F#`
 
 - [CallerLineNumber](Single/CallerLineNumber)
+- [HostedCompiler](Single/HostedCompiler)
 - [Result](Single/Result)
-- [StrcuturedFormatDisplay](Single/StrcuturedFormatDisplay)
+- [StructuredFormatDisplay](Single/StructuredFormatDisplay)
 
 ## Resources
 
