@@ -3,7 +3,7 @@ Task("Build-Readme").Does(() => {
     var links = new List<string>();
     
     var files = new System.IO.DirectoryInfo("./Single")
-        .GetFiles("*.fsx", System.IO.SearchOption.AllDirectories)
+        .GetFiles("*.*sx", System.IO.SearchOption.AllDirectories)
         .GroupBy(x => x.Directory.FullName)
         .Select(x => x.FirstOrDefault())
         .ToList();

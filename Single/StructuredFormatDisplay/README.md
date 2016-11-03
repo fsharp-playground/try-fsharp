@@ -1,4 +1,4 @@
-## main.fsx
+## Main.fsx
 
 ```fsharp
 

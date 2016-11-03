@@ -14,7 +14,6 @@ type C() =
    member x.P = 1
 
 let x = 3 + 4
-
 """)
 
 let scs = SimpleSourceCodeServices()
