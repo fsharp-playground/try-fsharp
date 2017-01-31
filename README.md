@@ -8,6 +8,7 @@
 - [Range](Single/Range)
 - [RegexReplace](Single/RegexReplace)
 - [Result](Single/Result)
+- [Stringf](Single/Stringf)
 - [StructuredFormatDisplay](Single/StructuredFormatDisplay)
 
 ## Resources

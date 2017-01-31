@@ -5,6 +5,7 @@ packages
 bin
 obj
 *.exe
+*.userprefs
 tools
 tools
 output
