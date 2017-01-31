@@ -8,6 +8,7 @@
 - [Range](Single/Range)
 - [RegexReplace](Single/RegexReplace)
 - [Result](Single/Result)
+- [StaticallyResolvedTypeParameters](Single/StaticallyResolvedTypeParameters)
 - [Stringf](Single/Stringf)
 - [StructuredFormatDisplay](Single/StructuredFormatDisplay)
 
