@@ -2,6 +2,7 @@
 
 - [Arrays](Single/Arrays)
 - [CallerLineNumber](Single/CallerLineNumber)
+- [GroupWhen](Single/GroupWhen)
 - [HaskellFunctionIterate](Single/HaskellFunctionIterate)
 - [HostedCompiler](Single/HostedCompiler)
 - [Range](Single/Range)
