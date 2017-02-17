@@ -1,6 +1,7 @@
 ## Try `F#`
 
 - [Arrays](Single/Arrays)
+- [BasicTypeParam](Single/BasicTypeParam)
 - [CallerLineNumber](Single/CallerLineNumber)
 - [GroupWhen](Single/GroupWhen)
 - [HaskellFunctionIterate](Single/HaskellFunctionIterate)
@@ -13,6 +14,7 @@
 - [Stringf](Single/Stringf)
 - [StructuredFormatDisplay](Single/StructuredFormatDisplay)
 - [TypeConstructor](Single/TypeConstructor)
+- [TypeParameterDefinitions](Single/TypeParameterDefinitions)
 
 ## Resources
 
