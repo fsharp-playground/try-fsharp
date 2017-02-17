@@ -12,6 +12,7 @@
 - [StaticallyResolvedTypeParameters](Single/StaticallyResolvedTypeParameters)
 - [Stringf](Single/Stringf)
 - [StructuredFormatDisplay](Single/StructuredFormatDisplay)
+- [TypeConstructor](Single/TypeConstructor)
 
 ## Resources
 
