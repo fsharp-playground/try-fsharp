@@ -6,6 +6,7 @@
 - [GroupWhen](Single/GroupWhen)
 - [HaskellFunctionIterate](Single/HaskellFunctionIterate)
 - [HostedCompiler](Single/HostedCompiler)
+- [Pattern](Single/Pattern)
 - [Range](Single/Range)
 - [RegexReplace](Single/RegexReplace)
 - [Result](Single/Result)
