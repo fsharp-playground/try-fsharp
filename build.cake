@@ -1,8 +1,25 @@
+var mainTemplate = @"
+## Try `F#`
+
+{{links}}
+
+## Resources
+
+- https://github.com/fsharp/fslang-suggestions
+";
+
+var readmeTemplate = @"
+## {{fileName}}
+
+```fsharp
+{{source}}
+```
+";
 
 Task("Build-Readme").Does(() => {
     var links = new List<string>();
     
-    var files = new System.IO.DirectoryInfo("./Single")
+    var files = new System.IO.DirectoryInfo("./")
         .GetFiles("*.*sx", System.IO.SearchOption.AllDirectories)
         .GroupBy(x => x.Directory.FullName)
         .Select(x => x.FirstOrDefault())
@@ -10,7 +27,7 @@ Task("Build-Readme").Does(() => {
 
     files.ForEach(file => {
         Console.WriteLine(file.FullName);
-        var text = System.IO.File.ReadAllText("T4/readme.template");
+        var text = readmeTemplate; 
         var source = System.IO.File.ReadAllText(file.FullName);
         var name = file.Name;
         var newText = text
@@ -21,11 +38,11 @@ Task("Build-Readme").Does(() => {
         System.IO.File.WriteAllText(mdFile, newText);
 
         var dirName = file.Directory.Name;
-        var link = $"- [{dirName}](Single/{dirName})";
+        var parent = file.Directory.Parent.Name;
+        var link = $"- [{parent}:{dirName}]({parent}/{dirName})";
         links.Add(link);
     });
 
-    var mainTemplate = System.IO.File.ReadAllText("T4/main.template");
     var mainText = mainTemplate.Replace("{{links}}", String.Join("\n", links));
     System.IO.File.WriteAllText("README.md", mainText);
 });
