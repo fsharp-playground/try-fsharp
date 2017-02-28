@@ -1,5 +1,5 @@
 var mainTemplate = @"
-## Try `F#`
+## Try Functional Programming
 
 {{links}}
 
@@ -16,18 +16,27 @@ var readmeTemplate = @"
 ```
 ";
 
+var haskellTemplate = @"
+## {{fileName}}
+
+```haskell
+{{source}}
+```
+";
+
 Task("Build-Readme").Does(() => {
     var links = new List<string>();
     
     var files = new System.IO.DirectoryInfo("./")
-        .GetFiles("*.*sx", System.IO.SearchOption.AllDirectories)
+        .GetFiles("*.*s*", System.IO.SearchOption.AllDirectories)
         .GroupBy(x => x.Directory.FullName)
         .Select(x => x.FirstOrDefault())
+        .Where(x => x.Extension == ".fsx" || x.Extension == ".csx" || x.Extension == ".hs")
         .ToList();
 
     files.ForEach(file => {
         Console.WriteLine(file.FullName);
-        var text = readmeTemplate; 
+        var text = file.FullName.EndsWith(".hs") ? haskellTemplate : readmeTemplate; 
         var source = System.IO.File.ReadAllText(file.FullName);
         var name = file.Name;
         var newText = text

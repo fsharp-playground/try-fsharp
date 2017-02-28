@@ -1,5 +1,5 @@
 
-## Try `F#`
+## Try Functional Programming
 
 - [Fs.ComputationExpression:Bind](Fs.ComputationExpression/Bind)
 - [Fs.ComputationExpression:Eurler](Fs.ComputationExpression/Eurler)
@@ -22,15 +22,14 @@
 - [Fs.Single:TypeParameterDefinitions](Fs.Single/TypeParameterDefinitions)
 - [Fs.Tests:ActivePattern](Fs.Tests/ActivePattern)
 - [Fs.Tests:CompuationExpression](Fs.Tests/CompuationExpression)
-- [Fs.Tests:Fever](Fs.Tests/Fever)
 - [Fs.Tests:FizzBuzz](Fs.Tests/FizzBuzz)
 - [Fs.Tests:FriendlyDateFormatting](Fs.Tests/FriendlyDateFormatting)
 - [Fs.Tests:GroupBy](Fs.Tests/GroupBy)
 - [Fs.Tests:HelloCompuationExpression](Fs.Tests/HelloCompuationExpression)
 - [Fs.Tests:Legacy](Fs.Tests/Legacy)
-- [Fs.Tests:LongTimeAgo](Fs.Tests/LongTimeAgo)
 - [Fs.Tests:MatchExpression](Fs.Tests/MatchExpression)
 - [Fs.Tests:TomasFailed](Fs.Tests/TomasFailed)
+- [Hs:ReadyToGo](Hs/ReadyToGo)
 
 ## Resources
 
