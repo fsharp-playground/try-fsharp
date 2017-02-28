@@ -9,3 +9,8 @@ obj
 tools
 tools
 output
+
+*.hi
+*.obj
+*.exe
+*.o
