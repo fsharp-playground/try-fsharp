@@ -4,6 +4,7 @@
 - [Fs.ComputationExpression:Bind](Fs.ComputationExpression/Bind)
 - [Fs.ComputationExpression:Eurler](Fs.ComputationExpression/Eurler)
 - [Fs.ComputationExpression:Introduction](Fs.ComputationExpression/Introduction)
+- [Fs.ComputationExpression:ZeroAndYield](Fs.ComputationExpression/ZeroAndYield)
 - [Fs.Single:Arrays](Fs.Single/Arrays)
 - [Fs.Single:BasicTypeParam](Fs.Single/BasicTypeParam)
 - [Fs.Single:CallerLineNumber](Fs.Single/CallerLineNumber)
