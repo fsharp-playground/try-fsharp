@@ -3,6 +3,7 @@
 
 - [Fs.ComputationExpression:Bind](Fs.ComputationExpression/Bind)
 - [Fs.ComputationExpression:Eurler](Fs.ComputationExpression/Eurler)
+- [Fs.ComputationExpression:ImplementingABuilderCombine](Fs.ComputationExpression/ImplementingABuilderCombine)
 - [Fs.ComputationExpression:Introduction](Fs.ComputationExpression/Introduction)
 - [Fs.ComputationExpression:MonadPrimer](Fs.ComputationExpression/MonadPrimer)
 - [Fs.ComputationExpression:ZeroAndYield](Fs.ComputationExpression/ZeroAndYield)
