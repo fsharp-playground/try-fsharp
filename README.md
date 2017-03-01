@@ -4,6 +4,7 @@
 - [Fs.ComputationExpression:Bind](Fs.ComputationExpression/Bind)
 - [Fs.ComputationExpression:Eurler](Fs.ComputationExpression/Eurler)
 - [Fs.ComputationExpression:Introduction](Fs.ComputationExpression/Introduction)
+- [Fs.ComputationExpression:MonadPrimer](Fs.ComputationExpression/MonadPrimer)
 - [Fs.ComputationExpression:ZeroAndYield](Fs.ComputationExpression/ZeroAndYield)
 - [Fs.Single:Arrays](Fs.Single/Arrays)
 - [Fs.Single:BasicTypeParam](Fs.Single/BasicTypeParam)
@@ -30,6 +31,7 @@
 - [Fs.Tests:Legacy](Fs.Tests/Legacy)
 - [Fs.Tests:MatchExpression](Fs.Tests/MatchExpression)
 - [Fs.Tests:TomasFailed](Fs.Tests/TomasFailed)
+- [Hs:Functors](Hs/Functors)
 - [Hs:ReadyToGo](Hs/ReadyToGo)
 
 ## Resources
