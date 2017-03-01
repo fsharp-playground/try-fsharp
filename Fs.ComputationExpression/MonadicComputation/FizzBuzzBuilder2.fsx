@@ -8,9 +8,11 @@ type FizzBuzzBuilder() =
         | DivisibleBy 5 -> "Buzz"
         | _ -> string v 
     member b.For(generated, f) = generated |> Seq.map f
+    member b.Run(filtered) = filtered |> Seq.where(fun x -> x = "Fizz")
 
 let fb = FizzBuzzBuilder()
 let rs = fb { for x in 1 .. 100 do yield x }  
 rs |> Seq.iter (printf "%s ")
+
 
 

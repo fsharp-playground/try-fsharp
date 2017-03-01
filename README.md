@@ -9,6 +9,7 @@
 - [Fs.ComputationExpression:MonadPrimer](Fs.ComputationExpression/MonadPrimer)
 - [Fs.ComputationExpression:MonadicComputation](Fs.ComputationExpression/MonadicComputation)
 - [Fs.ComputationExpression:ZeroAndYield](Fs.ComputationExpression/ZeroAndYield)
+- [try-fsharp:Fs.Playground](try-fsharp/Fs.Playground)
 - [Fs.Single:Arrays](Fs.Single/Arrays)
 - [Fs.Single:BasicTypeParam](Fs.Single/BasicTypeParam)
 - [Fs.Single:CallerLineNumber](Fs.Single/CallerLineNumber)
