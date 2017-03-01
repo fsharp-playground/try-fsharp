@@ -2,10 +2,12 @@
 ## Try Functional Programming
 
 - [Fs.ComputationExpression:Bind](Fs.ComputationExpression/Bind)
-- [Fs.ComputationExpression:Eurler](Fs.ComputationExpression/Eurler)
+- [Fs.ComputationExpression:Euler](Fs.ComputationExpression/Euler)
+- [Fs.ComputationExpression:FizzBuzz](Fs.ComputationExpression/FizzBuzz)
 - [Fs.ComputationExpression:ImplementingABuilderCombine](Fs.ComputationExpression/ImplementingABuilderCombine)
 - [Fs.ComputationExpression:Introduction](Fs.ComputationExpression/Introduction)
 - [Fs.ComputationExpression:MonadPrimer](Fs.ComputationExpression/MonadPrimer)
+- [Fs.ComputationExpression:MonadicComputation](Fs.ComputationExpression/MonadicComputation)
 - [Fs.ComputationExpression:ZeroAndYield](Fs.ComputationExpression/ZeroAndYield)
 - [Fs.Single:Arrays](Fs.Single/Arrays)
 - [Fs.Single:BasicTypeParam](Fs.Single/BasicTypeParam)
