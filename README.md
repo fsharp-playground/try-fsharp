@@ -14,6 +14,7 @@
 - [Fs.Single:BasicTypeParam](Fs.Single/BasicTypeParam)
 - [Fs.Single:CallerLineNumber](Fs.Single/CallerLineNumber)
 - [Fs.Single:GroupWhen](Fs.Single/GroupWhen)
+- [Fs.Single:Grouping](Fs.Single/Grouping)
 - [Fs.Single:HaskellFunctionIterate](Fs.Single/HaskellFunctionIterate)
 - [Fs.Single:HostedCompiler](Fs.Single/HostedCompiler)
 - [Fs.Single:Pattern](Fs.Single/Pattern)
