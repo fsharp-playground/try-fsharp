@@ -1,8 +1,4 @@
 
-## Error.fsx
-
-```fsharp
-
 open System
 
 type Builder() =
@@ -31,5 +27,3 @@ let rs =
         let! b = getValue("0")
         return divideBy a b
     } |> printfn "%A"
-
-```
