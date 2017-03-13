@@ -1,0 +1,31 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+ "saveAndRun": {
+        "commands": [
+            {
+                "match": "\\.ts$",
+                "cmd": "node_modules/ts-node/dist/bin.js ${relativeFile}"
+            },
+            {
+                "match": "\\.hs$",
+                "cmd": "ghc ${relativeFile} -o /Users/wk/wk/temp/${fileBasenameNoExt}.exe; /Users/wk/wk/temp/${fileBasenameNoExt}.exe"
+            },
+            {
+                "match": "\\.il$",
+                "cmd": "ilasm ${relativeFile}; mono ${fileDirname}/${fileBasenameNoExt}.exe"
+            },
+            {
+                "match": "\\.csx$",
+                "cmd": "csharp ${relativeFile}"
+            },
+            {
+                "match": "\\.fsx$",
+                "cmd": "fsharpi ${relativeFile}"
+            },
+            {
+                "match": "\\.kts$",
+                "cmd": "kotlinc -script ${file}"
+            }
+        ]
+    }
+}

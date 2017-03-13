@@ -1,0 +1,11 @@
+{
+  "name": "try-fsharp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Somnuk Wongkhan <somnuk.wk@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^2.1.0",
+    "typescript": "^2.2.1"
+  }
+}

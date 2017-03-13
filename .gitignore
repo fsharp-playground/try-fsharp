@@ -14,3 +14,5 @@ output
 *.obj
 *.exe
 *.o
+
+node_modules
