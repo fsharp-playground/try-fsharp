@@ -30,7 +30,6 @@ let resultList =
     let j = k <*> [3;4]
     j
 
-
 let resultOptions2 =
     let (<!>) = Option.map
     let (<*>) = Option.apply

@@ -29,6 +29,7 @@
 - [Fs.Single:StructuredFormatDisplay](Fs.Single/StructuredFormatDisplay)
 - [Fs.Single:TypeConstructor](Fs.Single/TypeConstructor)
 - [Fs.Single:TypeParameterDefinitions](Fs.Single/TypeParameterDefinitions)
+- [Fs.Snip:NullableBuilder](Fs.Snip/NullableBuilder)
 - [Fs.Tests:ActivePattern](Fs.Tests/ActivePattern)
 - [Fs.Tests:CompuationExpression](Fs.Tests/CompuationExpression)
 - [Fs.Tests:FizzBuzz](Fs.Tests/FizzBuzz)

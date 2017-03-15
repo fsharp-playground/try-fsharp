@@ -5,3 +5,5 @@ printfn "%A" x
 printfn "%A" (Array.choose (fun x -> if x = 1 then Some(x) else None) [|1;2;3|])
 
 printf "%A" (Array.collect)
+
+printfn "Hello, world!"
