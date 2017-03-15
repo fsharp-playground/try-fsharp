@@ -1,7 +1,3 @@
-
-## ImplicitPriority.csx
-
-```fsharp
 class C {
     public static int operator +(int i, C c) => c + i;
     public static int operator +(C c, int i) => c + i;
@@ -12,4 +8,3 @@ class C {
 
 var x = 100 + new C(); // int
 var y = new C() + 100; // int
-```

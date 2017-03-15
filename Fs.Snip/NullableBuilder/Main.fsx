@@ -13,9 +13,9 @@ type NullableBuilder() =
 let nullable = NullableBuilder()
 let test =
     nullable {
-        let! a = System.Nullable(3)
-        let! b = System.Nullable(5)
-        let! c = System.Nullable()
+        let! a = Nullable(3)
+        let! b = Nullable(5)
+        let! c = Nullable()
         let mult = a * b * c
         let sum = mult + 1
         return sum
