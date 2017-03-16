@@ -6,6 +6,7 @@ type NullableBuilder() =
     let hasValue (a: Nullable<'a>) = a.HasValue
     member t.Return(x) = Nullable(x)
     member t.Bind(x, rest) =
+        printfn "x = %A" x
         match hasValue x with
         | false -> Nullable()
         | true -> rest(x.Value)
