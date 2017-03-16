@@ -30,6 +30,7 @@
 - [FSharp.Single:StructuredFormatDisplay](FSharp.Single/StructuredFormatDisplay)
 - [FSharp.Single:TypeConstructor](FSharp.Single/TypeConstructor)
 - [FSharp.Single:TypeParameterDefinitions](FSharp.Single/TypeParameterDefinitions)
+- [FSharp.StackOverflow:MonadUnique](FSharp.StackOverflow/MonadUnique)
 - [FSharp.Tests:ActivePattern](FSharp.Tests/ActivePattern)
 - [FSharp.Tests:CompuationExpression](FSharp.Tests/CompuationExpression)
 - [FSharp.Tests:FizzBuzz](FSharp.Tests/FizzBuzz)
