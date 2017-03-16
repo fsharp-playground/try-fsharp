@@ -31,6 +31,7 @@ Task("Build-Readme").Does(() => {
         .GetFiles("*.*s*", System.IO.SearchOption.AllDirectories)
         .GroupBy(x => x.Directory.FullName)
         .Select(x => x.FirstOrDefault())
+        .Where(x => !x.FullName.Contains("node_module"))
         .Where(x => x.Extension == ".fsx" || x.Extension == ".csx" || x.Extension == ".hs" || x.Extension == ".ts")
         .ToList();
 

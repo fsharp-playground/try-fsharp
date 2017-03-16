@@ -13,7 +13,6 @@
 - [FSharp.ComputationExpression:ZeroAndYield](FSharp.ComputationExpression/ZeroAndYield)
 - [FSharp.FSharpPlus:Monad](FSharp.FSharpPlus/Monad)
 - [FSharp.FsSnip:NullableBuilder](FSharp.FsSnip/NullableBuilder)
-- [try-fsharp:FSharp.Playground](try-fsharp/FSharp.Playground)
 - [FSharp.Single:Arrays](FSharp.Single/Arrays)
 - [FSharp.Single:BasicTypeParam](FSharp.Single/BasicTypeParam)
 - [FSharp.Single:CallerLineNumber](FSharp.Single/CallerLineNumber)
@@ -22,6 +21,7 @@
 - [FSharp.Single:HaskellFunctionIterate](FSharp.Single/HaskellFunctionIterate)
 - [FSharp.Single:HostedCompiler](FSharp.Single/HostedCompiler)
 - [FSharp.Single:Pattern](FSharp.Single/Pattern)
+- [FSharp.Single:Playground](FSharp.Single/Playground)
 - [FSharp.Single:Range](FSharp.Single/Range)
 - [FSharp.Single:RegexReplace](FSharp.Single/RegexReplace)
 - [FSharp.Single:Result](FSharp.Single/Result)
@@ -45,10 +45,6 @@
 - [Haskell:ReadyToGo](Haskell/ReadyToGo)
 - [JavaScript:LingoForJavaScripter](JavaScript/LingoForJavaScripter)
 - [JavaScript:MonadsInJavaScript](JavaScript/MonadsInJavaScript)
-- [any-promise:register](any-promise/register)
-- [node_modules:make-error](node_modules/make-error)
-- [ts-node:dist](ts-node/dist)
-- [tsconfig:dist](tsconfig/dist)
 
 ## Resources
 
