@@ -11,6 +11,7 @@
 - [FSharp.ComputationExpression:MonadicComputation](FSharp.ComputationExpression/MonadicComputation)
 - [FSharp.ComputationExpression:UnderstandingMapAndApply](FSharp.ComputationExpression/UnderstandingMapAndApply)
 - [FSharp.ComputationExpression:ZeroAndYield](FSharp.ComputationExpression/ZeroAndYield)
+- [FSharp.FSharpPlus:Monad](FSharp.FSharpPlus/Monad)
 - [FSharp.FsSnip:NullableBuilder](FSharp.FsSnip/NullableBuilder)
 - [try-fsharp:FSharp.Playground](try-fsharp/FSharp.Playground)
 - [FSharp.Single:Arrays](FSharp.Single/Arrays)

@@ -2,6 +2,8 @@
 ## Monad.fsx
 
 ```fsharp
+// http://stackoverflow.com/questions/5996239/is-fs-implementation-of-monads-unique-with-respect-to-the-amount-of-keywords-a
+
 type MaybeMonad() =
     member x.Bind(m, f) =
         match m with
