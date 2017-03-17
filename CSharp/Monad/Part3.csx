@@ -21,30 +21,6 @@ public class C<T> where T: struct
 
 public class Main {
 
-    /* 
-    public static Nullable<int> ApplyFunction(
-        Nullable<int> nullable,
-        Func<int,int> function) {
-            if(nullable.HasValue) {
-                var u = nullable.Value;
-                var r = function(u);
-                return new Nullable<int>(r);
-            } else {
-                return new Nullable<int>();
-            }
-        }
-    */
-
-    public static Nullable<T> ApplyFunction<T>( Nullable<T> nullable, Func<T, T> function) where T: struct {
-        if (nullable.HasValue) {
-            T unwrapped = nullable.Value;
-            T result = function(unwrapped);
-            return new Nullable<T>(result);
-        }
-        else
-            return new Nullable<T>();
-    }
-
     public static IEnumerable<int> AddOne2(IEnumerable<int> sequence) => from item in sequence select item + 1;
 
     public static IEnumerable<int> AddOne(IEnumerable<int> sequence) {
@@ -79,7 +55,16 @@ public class Main {
 
     public static Nullable<int> AddOne(Nullable<int> nullable)
     {
-        return ApplyFunction(nullable, (x) => x + 1);
+        if (nullable.HasValue)
+        {
+            var unwrapped = nullable.Value;
+            var result = unwrapped + 1;
+            return C<int>.CreateSimleNullable(result);
+        }
+        else
+        {
+            return new Nullable<int>();
+        }
     }
 }
 
