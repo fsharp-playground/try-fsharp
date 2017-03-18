@@ -102,13 +102,10 @@ public class M4
         }
     }
 
-    Lazy<R> ApplyFunction<A, R>(Lazy<A> lazy, Func<A, R> function)
-        where A: struct
-        where R: struct
-     {
+    Lazy<R> ApplyFunction<A, R>(Lazy<A> lazy, Func<A, R> function) {
         return new Lazy<R>(() => {
-            var un = lazy.Value;
-            var result = function(un);
+            var unwrap = lazy.Value;
+            var result = function(unwrap);
             return result;
         });
     }
