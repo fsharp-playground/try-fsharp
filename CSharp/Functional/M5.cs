@@ -11,6 +11,8 @@ namespace Functional
         [Fact]
         public void T() {
 
+            var x = ApplyFunction<int, double>(new Lazy<int>(() => 1), (a) => new Lazy<double>(() => 0.0));
+
             IEnumerable<R> ApplySpecialFunctionE<A,R>(IEnumerable<A> sequence, Func<A, IEnumerable<R>> function) {
                 foreach(var uw in sequence) {
                     var result = function(uw);
@@ -26,13 +28,27 @@ namespace Functional
                 return await result;
             }
 
-            Lazy<R> ApplySpecialFunctionL<A, R>(Lazy<A> lazy, Func<A, Lazy<R>> function) {
+
+            Lazy<R> ApplyFunction<A, R>(Lazy<A> lazy, Func<A, R> function) {
                 return new Lazy<R>(() => {
-                    var uw = lazy.Value;
-                    var result = function(uw);
+                    var unwraped = lazy.Value;
+                    var result = function(unwraped);
+                    return result;
+                });
+            }
+
+            Lazy<R> ApplySpecialFunction<A, R>(Lazy<A> lazy, Func<A, Lazy<R>> function) {
+                return new Lazy<R>(() => {
+                    var unwraped = lazy.Value;
+                     Lazy<R> result = function(unwraped);
                     return result.Value;
                 });
             }
+
+            // Don't see how difference
+            var lazyInt = new Lazy<int>(() => 100);
+            var v1 = ApplyFunction<int, double>(lazyInt, (a) => a / 2);
+            var v2 = ApplySpecialFunction<int, double>(lazyInt, (a) => new Lazy<double>(() => a / 2));
 
             Func<R> ApplySpecialFunctionF<A,R>(Func<A> onDemand, Func<A, Func<R>> function) {
                 return () => {
@@ -42,7 +58,7 @@ namespace Functional
                 };
             }
             
-            Nullable<R> ApplySpecialFunction<A, R>(Nullable<A> nullable, Func<A, Nullable<R>> function)
+            Nullable<R> ApplySpecialFunctionN<A, R>(Nullable<A> nullable, Func<A, Nullable<R>> function)
                 where R: struct
                 where A: struct
              {
