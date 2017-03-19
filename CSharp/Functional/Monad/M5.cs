@@ -11,8 +11,6 @@ namespace Functional
         [Fact]
         public void T() {
 
-            var x = ApplyFunction<int, double>(new Lazy<int>(() => 1), (a) => new Lazy<double>(() => 0.0));
-
             IEnumerable<R> ApplySpecialFunctionE<A,R>(IEnumerable<A> sequence, Func<A, IEnumerable<R>> function) {
                 foreach(var uw in sequence) {
                     var result = function(uw);
@@ -71,9 +69,9 @@ namespace Functional
                 }
             }
 
-            Nullable<double> SafeLog(int x) {
-                if(x > 0)  {
-                    return new Nullable<double>(Math.Log(x));
+            Nullable<double> SafeLog(int k) {
+                if(k > 0)  {
+                   return new Nullable<double>(Math.Log(k));
                 } else {
                     return new Nullable<double>();
                 }

@@ -1,6 +1,8 @@
 // Place your settings in this file to overwrite default and user settings.
 {
     "files.exclude": {
+        "**/bin": true,
+        "**/obj": true,
         "node_modules": true,
         "packages": true,
         "_config.yml": true,
