@@ -1,4 +1,8 @@
 
+## Fold.fsx
+
+```fsharp
+
 let rec fold func init data = 
     match data with
     | h:: t -> 
@@ -14,3 +18,5 @@ y |> fold (+) "xxx" |> printfn "%A"
 
 List.reduce (+) [1] |> printfn "%A"
 
+
+```

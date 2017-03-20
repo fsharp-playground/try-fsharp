@@ -24,6 +24,7 @@
 - [FSharp.Single ⌁ Pattern](FSharp.Single/Pattern)
 - [FSharp.Single ⌁ Playground](FSharp.Single/Playground)
 - [FSharp.Single ⌁ Range](FSharp.Single/Range)
+- [FSharp.Single ⌁ Reduce](FSharp.Single/Reduce)
 - [FSharp.Single ⌁ RegexReplace](FSharp.Single/RegexReplace)
 - [FSharp.Single ⌁ Result](FSharp.Single/Result)
 - [FSharp.Single ⌁ SimpleAsyncFunction](FSharp.Single/SimpleAsyncFunction)
