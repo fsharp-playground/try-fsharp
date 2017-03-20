@@ -18,5 +18,8 @@ let reduce<'a> func (input: 'a list ) =
 
 let x = [1;2;3]
 x |> reduce (+) |> printfn "%A"
+x |> reduce max |> printfn "%A"
+x |> reduce min |> printfn "%A"
 
-["Hello"; "World"] |> reduce (+) |> printfn "%A"
+let y = ["Hello"; "world"]
+y |> reduce (+) |> printfn "%A"
