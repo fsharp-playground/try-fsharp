@@ -20,9 +20,7 @@ public class SelectManyTest {
         var q2 = new List<int>{1,2,3}
                 .SelectMany( number => new List<char>{'a','b','c'}, (number, letter) => new { number, letter })
                 .SelectMany( ti1 => itemList, (ti1, item) => new { ti1, item })
-                .SelectMany( ti2 => widgetList,
-                    (ti2, widget) => $"({ti2.ti1.number}, {ti2.ti1.letter}, {ti2.item.Name}, {widget.Id})"
-                );
+                .SelectMany( ti2 => widgetList, (ti2, widget) => $"({ti2.ti1.number}, {ti2.ti1.letter}, {ti2.item.Name}, {widget.Id})");
 
         Assert.Equal(query.ToArray(), q2.ToArray());
     }
