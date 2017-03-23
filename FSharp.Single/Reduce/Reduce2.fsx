@@ -1,7 +1,7 @@
 
-let rec fold func init data = 
-    match data with
-    | h:: t -> 
+let rec fold func init input = 
+    match input with
+    | h::t -> 
         (func h) (fold func init t)
     | [] -> init
 
@@ -10,5 +10,5 @@ let reduce func input =
     | [] -> failwith "Invalid input"
     | h::t -> fold func h t
 
-let x = [1;2;3]
-x |> reduce (+) |> printfn "%A"
+["a";"b";"c";"d";"e"]   |> fold (+) "-"     |> printfn "%A"     // abcde-
+["a";"b";"c";"d";"e"]   |> reduce (+)       |> printfn "%A"     // bcdea

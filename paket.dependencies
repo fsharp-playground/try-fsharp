@@ -1,3 +1,7 @@
 source http://nuget.org/api/v2
 nuget FSharp.Compiler.Service
 nuget FSharpPlus prerelease
+
+nuget Expecto
+nuget Expecto.BenchmarkDotNet
+nuget Expecto.FsCheck

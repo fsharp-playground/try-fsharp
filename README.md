@@ -4,6 +4,7 @@
 - [CSharp ⌁ Monad](CSharp/Monad)
 - [FSharp.ComputationExpression ⌁ Bind](FSharp.ComputationExpression/Bind)
 - [FSharp.ComputationExpression ⌁ Euler](FSharp.ComputationExpression/Euler)
+- [FSharp.ComputationExpression ⌁ FakingTypeClasses](FSharp.ComputationExpression/FakingTypeClasses)
 - [FSharp.ComputationExpression ⌁ FizzBuzz](FSharp.ComputationExpression/FizzBuzz)
 - [FSharp.ComputationExpression ⌁ ImplementingABuilderCombine](FSharp.ComputationExpression/ImplementingABuilderCombine)
 - [FSharp.ComputationExpression ⌁ Introduction](FSharp.ComputationExpression/Introduction)
