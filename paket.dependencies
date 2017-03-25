@@ -5,3 +5,4 @@ nuget FSharpPlus prerelease
 nuget Expecto
 nuget Expecto.BenchmarkDotNet
 nuget Expecto.FsCheck
+nuget Suave
