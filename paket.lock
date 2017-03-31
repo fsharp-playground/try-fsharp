@@ -306,6 +306,10 @@ NUGET
       System.Runtime.Serialization.Json (>= 4.0.2) - framework: >= netstandard16
       System.Security.Claims (>= 4.0.1) - framework: >= netstandard16
       System.Security.Cryptography.Primitives (>= 4.3) - framework: >= netstandard16
+    Suave.Testing (2.0.5)
+      Expecto (>= 4.0.3)
+      FSharp.Core (>= 4.0.0.1)
+      Suave (>= 2.0.5)
     System.AppContext (4.3) - framework: >= net46, >= netstandard16
       System.Runtime (>= 4.3) - framework: dnxcore50, netstandard13, >= netstandard16
     System.Buffers (4.3) - framework: net10, net11, net20, net30, net35, net40, net40-full, >= net46, >= netstandard13
