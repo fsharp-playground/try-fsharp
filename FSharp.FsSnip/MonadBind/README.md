@@ -1,3 +1,7 @@
+
+## Main.fsx
+
+```fsharp
 // http://fssnip.net/lB/title/Monad-Bind-1-of-3
 
 open System
@@ -32,3 +36,4 @@ let fghTwoResult = fghTwo 100
 fghExplicitResult   |> printfn "%A"
 fghOneResult        |> printfn "%A"
 fghTwoResult        |> printfn "%A"
+```
