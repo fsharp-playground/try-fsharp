@@ -17,6 +17,7 @@
 - [FSharp.FSharpPlus ⌁ Monad](FSharp.FSharpPlus/Monad)
 - [FSharp.FsSnip ⌁ MonadBind](FSharp.FsSnip/MonadBind)
 - [FSharp.FsSnip ⌁ NullableBuilder](FSharp.FsSnip/NullableBuilder)
+- [FSharp.FsSnip ⌁ PointFree](FSharp.FsSnip/PointFree)
 - [FSharp.FsSnip ⌁ QuotationCodeLikeData](FSharp.FsSnip/QuotationCodeLikeData)
 - [FSharp.Single ⌁ Arrays](FSharp.Single/Arrays)
 - [FSharp.Single ⌁ BasicTypeParam](FSharp.Single/BasicTypeParam)
