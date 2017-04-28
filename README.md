@@ -37,6 +37,7 @@
 - [FSharp.Single ⌁ StaticallyResolvedTypeParameters](FSharp.Single/StaticallyResolvedTypeParameters)
 - [FSharp.Single ⌁ Stringf](FSharp.Single/Stringf)
 - [FSharp.Single ⌁ StructuredFormatDisplay](FSharp.Single/StructuredFormatDisplay)
+- [FSharp.Single ⌁ SumAndProductType](FSharp.Single/SumAndProductType)
 - [FSharp.Single ⌁ TypeConstructor](FSharp.Single/TypeConstructor)
 - [FSharp.Single ⌁ TypeParameterDefinitions](FSharp.Single/TypeParameterDefinitions)
 - [FSharp.StackOverflow ⌁ MonadUnique](FSharp.StackOverflow/MonadUnique)
