@@ -22,6 +22,7 @@
 - [FSharp.Single ⌁ Arrays](FSharp.Single/Arrays)
 - [FSharp.Single ⌁ BasicTypeParam](FSharp.Single/BasicTypeParam)
 - [FSharp.Single ⌁ CallerLineNumber](FSharp.Single/CallerLineNumber)
+- [FSharp.Single ⌁ FunctionComposition](FSharp.Single/FunctionComposition)
 - [FSharp.Single ⌁ FunctorApplicativeMonad](FSharp.Single/FunctorApplicativeMonad)
 - [FSharp.Single ⌁ GroupWhen](FSharp.Single/GroupWhen)
 - [FSharp.Single ⌁ Grouping](FSharp.Single/Grouping)
