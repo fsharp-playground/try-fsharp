@@ -1,0 +1,63 @@
+{
+    "window.width": 500,
+    "window.height": 100,
+    "vim.enableNeovim": true,
+    "editor.fontFamily": "Iosevka-Light",
+    "editor.fontSize": 14.0,
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 20,
+    "terminal.integrated.fontFamily": "Iosevka-Light",
+    "terminal.integrated.fontSize": 14.5,
+    "terminal.integrated.lineHeight": 1.6,
+    "typescript.check.tscVersion": false,
+    "edtor.formatOnSave": true,
+    "edior.lineNumbers": "relative",
+    "editor.codeLens": false,
+    "screenRecorder": {
+        "windowSizes": [
+            {
+                "width": 500,
+                "height": 500
+            }
+        ]
+    },
+    "files.associations": {
+        "*.kts": "kotlin",
+        "*.workbook": "markdown"
+    },
+    "saveAndRun": {
+        "commands": [
+            {
+                "match": "\\.hs$",
+                "cmd": "h-run ${relativeFile}"
+            },
+            {
+                "match": "\\.il$",
+                "cmd": "ilasm ${relativeFile}; mono ${fileDirname}/${fileBasenameNoExt}.exe"
+            },
+            {
+                "match": "\\.csx$",
+                "cmd": "csharp \"${relativeFile}\""
+            },
+            {
+                "match": "\\.fsx$",
+                "cmd": "fsharpi ${relativeFile}"
+            },
+            {
+                "match": "\\.kts$",
+                "cmd": "kotlinc -script ${file}"
+            }
+        ]
+    },
+    "workbench.statusBar.visible": true,
+    "editor.cursorStyle": "block",
+    "typescript.check.workspaceVersion": false,
+    "vsicons.projectDetection.disableDetect": true,
+    "[csharp]": {
+        
+    },
+    "workbench.colorTheme": "eppz!",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.sideBar.location": "left",
+    "vim.disableAnnoyingNeovimMessage": true
+}
