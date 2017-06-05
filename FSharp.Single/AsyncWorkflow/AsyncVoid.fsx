@@ -1,8 +1,10 @@
-
 open System
+let mainThreadId = System.Threading.Thread.CurrentThread.ManagedThreadId
 
 let throwExceptionAsync() = async {
+    printfn "Enter ..."
     raise <| InvalidOperationException()
+    printfn "Leave ..."
 }
 
 let callThrowExceptionAsync() =
